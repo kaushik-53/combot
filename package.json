@@ -1,0 +1,13 @@
+{
+  "name": "combot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "node server/scripts/seed.js",
+    "test": "npm test --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
